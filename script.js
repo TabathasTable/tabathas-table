@@ -1,1 +1,11 @@
-const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+# Tabatha's Table
+
+A responsive static homepage with real photography from the dining room and sunroom.
+
+## Publish with GitHub Pages
+1. Upload all files and the `assets` folder to the `tabathas-table` repository.
+2. Open Settings → Pages.
+3. Choose “Deploy from a branch.”
+4. Select `main` and `/root`.
+
+The email field is currently visual only and can later connect to Wix Email Marketing, Mailchimp, or ConvertKit.
