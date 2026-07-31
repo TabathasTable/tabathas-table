@@ -1,22 +1,145 @@
-TABATHA'S TABLE v0.3
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tabatha's Table — recipes, stories, and gatherings that feed more than hunger." />
+  <title>Tabatha's Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Tabatha's Table home">
+      <span class="brand-script">Tabatha's</span>
+      <span class="brand-small">TABLE</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav">
+      <a href="#cookbook">The Cookbook</a>
+      <a href="#month">This Month's Table</a>
+      <a href="#feast-fast">Feast & Fast</a>
+      <a href="#around">Around the Table</a>
+      <a href="#journal">Journal</a>
+      <a class="shop-link" href="#connect">Join the Table</a>
+    </nav>
+  </header>
 
-This package is ready to upload to the GitHub repository root.
+  <main id="top">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Recipes, stories & gatherings</p>
+        <h1>A Call to Feast<br>in a World That’s Fast</h1>
+        <p class="hero-copy">There is always room at the table.</p>
+        <a class="button light" href="#welcome">Pull Up a Chair</a>
+      </div>
+      <a class="scroll-cue" href="#welcome" aria-label="Scroll to welcome section">↓</a>
+    </section>
 
-Replace the existing files with:
-- index.html
-- styles.css
-- script.js
-- README.md
-- DEPLOY.txt
-- the complete assets folder
+    <section id="welcome" class="welcome split">
+      <div class="paper-panel reveal">
+        <p class="eyebrow warm">Welcome, friend.</p>
+        <h2>Come for the food.<br>Stay for the people.</h2>
+        <p>Tabatha’s Table is a place for seasonal menus, meaningful stories, and the kind of gathering that lingers long after the dishes are cleared.</p>
+        <p class="script-note">May these meals bless your home and your heart.</p>
+      </div>
+      <div class="photo-panel sunroom-photo" role="img" aria-label="A light-filled sunroom opening from the dining room"></div>
+    </section>
 
-Image update only:
-- New wide hero
-- Greenery and candle welcome image
-- Tulip monthly-table image
-- Bread close-up for Feast
-- Candle gathering for Fast
-- Hydrangeas for Around the Table
-- Autumn table for Journal
+    <section id="month" class="chapter">
+      <div class="chapter-photo reveal">
+        <img src="assets/pink-tulips.jpg" alt="Pink tulips arranged on Tabatha’s dining table in warm natural light">
+      </div>
+      <div class="chapter-copy reveal">
+        <p class="eyebrow warm">This Month’s Table</p>
+        <h2>Galentine’s Brunch</h2>
+        <p class="script-note">Gather the girls. Celebrate friendship. Make beautiful memories.</p>
+        <p>A bright, generous brunch built for laughter, shared plates, and a table that feels dressed without feeling precious.</p>
+        <a class="button clay" href="#feast-fast">Explore the Menu</a>
+      </div>
+    </section>
 
-No page structure or written content was redesigned.
+    <section id="feast-fast" class="three-up">
+      <article class="feature-card">
+        <div class="card-image card-feast"></div>
+        <div class="card-copy">
+          <p class="eyebrow warm">Feast</p>
+          <h3>Take your time.</h3>
+          <p>The full table, layered with recipes, details, and room to savor every bite.</p>
+          <a href="#cookbook">See the Feast</a>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <div class="card-image card-fast"></div>
+        <div class="card-copy">
+          <p class="eyebrow warm">Fast</p>
+          <h3>Gather anyway.</h3>
+          <p>A simpler version for busy days, with the same warmth and none of the guilt.</p>
+          <a href="#cookbook">See the Fast</a>
+        </div>
+      </article>
+
+      <article id="around" class="feature-card">
+        <div class="card-image card-around"></div>
+        <div class="card-copy">
+          <p class="eyebrow warm">Around the Table</p>
+          <h3>Feed more than hunger.</h3>
+          <p>Blessings, questions, memories, gratitude, and little ways to help the conversation open.</p>
+          <a href="#journal">Join the Conversation</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="cookbook" class="cookbook">
+      <div class="cookbook-art reveal">
+        <div class="book">
+          <div class="book-cover">
+            <span class="brand-script">Tabatha's</span>
+            <span class="brand-small">TABLE</span>
+            <p>A cookbook for your table.<br>A legacy for your family.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cookbook-copy reveal">
+        <p class="eyebrow warm">The Cookbook</p>
+        <h2>Recipes are only the beginning.</h2>
+        <p>Each chapter begins with a story and a fully dressed table, then unfolds into recipes, alternatives, Feast and Fast versions, and thoughtful conversation prompts.</p>
+        <a class="button outline" href="#connect">Follow the Journey</a>
+      </div>
+    </section>
+
+    <section id="journal" class="journal">
+      <div class="journal-inner reveal">
+        <p class="eyebrow">The Table Journal</p>
+        <h2>What happened around your table today?</h2>
+        <p>Who came? What made everyone laugh? What will you remember?</p>
+        <a class="button light" href="#connect">Coming Soon</a>
+      </div>
+    </section>
+
+    <section id="connect" class="connect">
+      <div>
+        <p class="eyebrow warm">Let’s Stay Connected</p>
+        <h2>Come back to the table.</h2>
+        <p>Seasonal menus, stories, and gathering inspiration, delivered gently.</p>
+      </div>
+      <form class="signup" onsubmit="event.preventDefault(); this.querySelector('button').textContent='You’re at the table';">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Your email address" required>
+        <button type="submit">Join the Table</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Tabatha’s Table</span>
+    <span>Made for gathering.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
