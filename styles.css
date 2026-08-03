@@ -22,3 +22,9 @@ h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:.98;
 .card-around{background-position:center 44%}
 .sunroom-photo{background-position:center 48%}
 .journal{background-position:center 54%}
+@media(max-width:600px){
+  .sunroom-photo{
+    min-height:500px;
+    background-position:center 35%;
+  }
+}
